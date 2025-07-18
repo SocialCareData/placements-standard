@@ -1,8 +1,13 @@
+# Placements Data Standard
+
+Status: Initial Draft
+Effective Date: 2025-07-18
+
 ## Purpose  
 
 This Placement Standard will standardise some of the data collected about children in care at the point they are referred for placement and the point where a placement is agreed. The goal of this standard is to support better analysis of placement sufficiency at the local and regional level, tackle high costs in the care market and improve outcomes for children in care.    
 
-Button: Raise an issue about purpose.  
+<a href="https://github.com/SocialCareData/placements-standard/issues/new?template=content_issue.yml&title=Issue+regarding+Placements+Spec+Purpose" class="web-button" target="_blank">Raise an issue about Purpose</a>
 
 ## Scope  
 
@@ -29,7 +34,7 @@ Button: Raise an issue about purpose.
 * Establish a standard referral form    
 * Mandate architecture or functionality changes for CMS suppliers  
 
-Button: Raise an issue about scope.  
+<a href="https://github.com/SocialCareData/placements-standard/issues/new?template=content_issue.yml&title=Issue+regarding+Placements+Spec+Scope" class="web-button" target="_blank">Raise an issue about Scope</a>
 
 ## Key assumptions  
 
@@ -40,7 +45,7 @@ There are a number of assumptions we have made in the design of the proposed dat
 
 The additional work for a placement worker of entering this data is approximately 90 seconds (based on initial pilots of this data model) 
 
-Button: Raise an issue about the key assumptions  
+<a href="https://github.com/SocialCareData/placements-standard/issues/new?template=content_issue.yml&title=Issue+regarding+Placements+Spec+Key+Assumptions" class="web-button" target="_blank">Raise an issue about Key Assumptions</a>
 
 ## Development principles  
 
@@ -52,9 +57,4 @@ Button: Raise an issue about the key assumptions
 * **Simplicity**: The data specifications must prioritise ease of understanding and implementation. Complexity should only be introduced when to address specific professional or regulatory requirements.   
 * **Reuse Existing Standards**: Where possible, specifications should align with UK implementations of HL7 FHIR, an established international standard widely used in health systems and increasingly in social care. 
 
-Button: Raise an issue about the key design decisions  
-
-## Specification  
-
-* Button to comment on each section of the section (as a whole section)    
-* Button to comment on each field in the spec  
+<a href="https://github.com/SocialCareData/placements-standard/issues/new?template=content_issue.yml&title=Issue+regarding+Placements+Spec+Development" class="web-button" target="_blank">Raise an issue about Development</a>
