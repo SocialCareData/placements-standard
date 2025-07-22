@@ -24,17 +24,17 @@ Although the Steering Committee for the Standards Programme has already agreed t
 
 ## What work has already been done to tackle this problem?  
 
-Local Authorities already gather standardised statutory data (e.g. the CLA Census) that allows regional (or national) answers to questions like:  
+Local Authorities already gather standardised statutory data (e.g. the CLA Census and SSDA903) that allows regional (or national) answers to questions like:  
 
 * How many children are placed outside their home LA or more than 20 miles away from their home LA?   
-* Which demographic characteristics or SDQs are more likely to be associated with being placed far from home?   
-* Which providers are being placed with most often?1  
+* Which demographic characteristics are more likely to be associated with being placed far from home?   
+* Which providers are being placed with most often?
 
 Further, some regions are developing their own standardised placement cost data models to start generating regional insight into market cost trends, and many LAs are utilising software solutions like BERRI, CANs and Care Cubed to build a database of costs, placement needs and outcome data. The table below provides an overview of the data models we are aware of.  
 
 <div class="background-table">
 
-  **Data captured**
+  **Data captured(working version - please let us know what we're missing)**
 |   |  |  |  |  |
 | :---- | :---: | :---: | :---: | :---: |
 | ​  | **Placement costs** - ​**child level**​  | **Determinants of availability**​\*  | **Preferred placement** ​  | **Child-level** ​**outcomes** ​  |
@@ -42,7 +42,7 @@ Further, some regions are developing their own standardised placement cost data 
 | Placements North West dataset​  | **✔️**​  | ​  | ​  | ​  |
 | White Rose placement dataset​  | **✔️**​  | ​  |   | ​  |
 | Southeast placement cost dataset​  | **✔️**​  | ​  | ​  | ​  |
-| West Midlands \[?\]​  | **✔️**​  | ​  | ​  | ​  |
+| West Midlands procurement dataset  | **✔️**​  | ​  | ​  | ​  |
 | Care Cubed ​  | **✔️​**  | ​  | ​  |   |
 | E-brokerage tools (various)  | **✔️**  |   | ?  |   |
 | Framework agreements (various)  | **✔️**  | **✔️**  |   |   |
@@ -56,7 +56,7 @@ Further, some regions are developing their own standardised placement cost data 
 </div>
 
 
-Although, as the table above shows, there are many models already gathering placement cost data, and some gathering other types of data necessary to meaningful regional sufficiency analysis, we are aware of none that gather all this data in a way that readily enables quantitative insight. As the table below shows, the data models we are aware of that capture rich insight on determinants of placement availability, preferred placement and child outcomes (BERRI, CANS and IMPOWER) are models designed to be used by social workers, rather than placement teams. While data of this sort gathered by social workers is invaluable for individual care planning, it is not designed primarily to support aggregate analysis or enable meaningful ‘apples for apples’ comparison with neighbours. This is because the data is largely qualitative and many key fields such as needs and risks are largely uncategorised.  
+Although, as the table above shows, there are many models already gathering placement cost data, and some gathering other types of data necessary to meaningful regional sufficiency analysis, we are aware of none that gather all this data in a way that readily enables quantitative insight into where key sufficiency gaps are. As the table below shows, the data models we are aware of that capture rich insight on determinants of placement availability, preferred placement and child outcomes (BERRI, CANS and IMPOWER) are models designed to be used by social workers, rather than placement teams. While data of this sort gathered by social workers is invaluable for individual care planning, it is not designed primarily to support aggregate analysis or enable meaningful ‘apples for apples’ comparison with neighbours. This is because the data is largely qualitative and many key fields such as needs and risks are largely uncategorised.  
 
 <div class="background-table">
 
