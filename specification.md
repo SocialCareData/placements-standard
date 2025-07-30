@@ -121,7 +121,7 @@ These fields describe the actual placement that occurred. These fields enable co
 |`Placement Location`	|*free text* |1| String | 
 |`Provider ID (linked to Ofsted)`	| *free text*| 1|	String | | 
 |`Whether Sibling Split` |*Y/N*| 1|	Boolean | |
-|`Placement Type`	| *Residential, Foster, Supported Accomodation* |1| 	Categorical | |
+|`Placement Type`	| *Residential, Foster, Supported Accommodation* |1| 	Categorical | |
 
 <a href="https://github.com/SocialCareData/placements-standard/issues/new?template=content_issue.yml&title=Issue+regarding+Placements+Spec+Placement+information+category" class="web-button" target="_blank">Raise an issue about this category: Placement information </a>
 
