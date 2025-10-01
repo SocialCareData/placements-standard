@@ -8,7 +8,7 @@ The fields below should represent the minimum necessary to describe the child in
 |----------|-------|-----------|------------------|
 | `Child ID` |*ID no.*| 1|integer|
 | `Local Identifier`| *free text* | 0, 1| String |
-|`Is this a planned emergency home search?`|*Planned/Emergency*|1|Boolean|
+|`Is this a planned emergency or emergency search?`|*Planned/Emergency*|1|Boolean|
 |`Latest date for placement to start by`​|*date*|1|	date|
 |`Number of sublings to place with` |*number*|0, 1 |integer | |
 
