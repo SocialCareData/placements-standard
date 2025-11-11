@@ -1,14 +1,16 @@
 
 # Describing a `Placement`: Specification
 
-## Determinants of placement availability 
+### Determinants of placement availability 
 
 |Field name|Options|Cardinality|Data Type & Format|
 |----------|-------|-----------|------------------|
 | `Child ID` |*ID no.*| 1|integer|
-| `When do you need this placement by`| *Today, <5 days, >5 days* | 0, 1| Categorical |
-|`Number of sublings to place with` |*number*|0, 1 |integer | |
+| `When placement is needed by`| *Today, in less than 5 days, in more than 5 days* | 0, 1| Categorical |
+|`Number of siblings to place with` |*number*|0, 1 |integer | |
 |`Preferred location for home search` |*freetext*|0, 1 |string| |
+
+<a href="https://github.com/SocialCareData/placements-standard/issues/new?template=content_issue.yml&title=Issue+regarding+Placement+Availability+Fields" class="web-button" target="_blank">Raise an issue about this category</a>
 
 ### Placement requirements
 
@@ -18,10 +20,12 @@
 | `Specific communication and language requirements` | *ESOL, BSL, Makaton, Other, None*| 	1, MANY | Categorical |
 | `Adaptation to the home` |	*Y/N* | 1 |Boolean | 
 | `Cultural needs (e.g. place of worship)` | *Required, Not required, Not Known, Other*  |	1 | Categorical | 
-| `Who can the child be cared for alongside` | *Solo placement recommended, With other children recommended, Only with other older children, Only with other younger children, No preference* |	1 (MUST)	| Categorical | 
-| `Can child live with pets/animals?` | *Yes - must/Yes - can/ No /Not Known*|	1 (MUST) | Categorical | 
+| `Who can the child be cared for alongside?` | *Solo placement recommended, With other children recommended, Only with other older children, Only with other younger children, No preference* |	1 (MUST)	| Categorical | 
+| `Can the child live with pets/animals?` | *Yes - must/Yes - can/ No /Not Known*|	1 (MUST) | Categorical | 
 |`Additional support (Please specify)`	| *additional supervision, therapeutic support, a worker for respite, taxis to school, NA, other (please specify)* |0, 1 |Categorical | | 
-|`Deprivation of Liberty Order)`	| *Yes, No* |0, 1	|Boolean | | 
+|`Deprivation of Liberty Order`	| *Yes, No* |0, 1	|Boolean | | 
+
+<a href="https://github.com/SocialCareData/placements-standard/issues/new?template=content_issue.yml&title=Issue+regarding+Placement+Requirements+Fields" class="web-button" target="_blank">Raise an issue about this category</a>
 
 ### Placement Recommendation
 |Field name|Options|Cardinality|Data Type & Format|
@@ -29,6 +33,8 @@
 | `Foster care suitability`|*Preferred, Suitable but not preferred, Unsuitable, Not specified* | 1 |	Categorical |
 | `Residential care suitability`	|*Preferred, Suitable but not preferred, Unsuitable, Not specified*  | 1 |	Categorica |
 | `Supported Accomodation suitability` | *Preferred, Suitable but not preferred, Unsuitable, Not specified*|	1 | Categorical |
+
+<a href="https://github.com/SocialCareData/placements-standard/issues/new?template=content_issue.yml&title=Issue+regarding+Placement+Requirements+Fields" class="web-button" target="_blank">Raise an issue about this category</a>
 
 ### Risks
 |Field name|Options|Cardinality|Data Type & Format|
@@ -47,18 +53,20 @@
 |`Risk to others or property: Criminal exploitation	`| *No known risk, Risk Present*| 1	|Categorical | | 
 |`Risk to others or property: Other (please specify)	`| *free text* |0, 1| 	String | |
 
-<a href="https://github.com/SocialCareData/placements-standard/issues/new?template=content_issue.yml&title=Issue+regarding+Placements+Spec+Risk+of+harm+to+others+or+property" class="web-button" target="_blank">Raise an issue about this category: Risk of harm to others or property </a>
+<a href="https://github.com/SocialCareData/placements-standard/issues/new?template=content_issue.yml&title=Issue+regarding+Risk+of+harm+to+others+or+property+Fields" class="web-button" target="_blank">Raise an issue about this category</a>
 
 ### Actual placement
 |Field name|Options|Cardinality|Data Type & Format|
 |----------|-------|-----------|------------------|
 |`Total Weekly Cost (actual weekly fee paid)`	|*number* |1| integer | 
 |`Placement Location`	|*free text* |1| String | 
-|`Preferrabilty of placement location`	|*Yes, No* |1| Boolean | 
+|`Preferabilty of placement location`	|*Yes, No* |1| Boolean | 
 |`Education Continuity`	|*Yes, No* |1| Boolean | 
 |`Provider URN (linked to Ofsted)`	| *free text*| 1|	String | | 
 |`How many siblings were placed together?` |*Number*| 1|	Integer | |
 |`Placement Type`	| *Residential, Foster, Supported Accommodation* |1| 	Categorical | |
+
+<a href="https://github.com/SocialCareData/placements-standard/issues/new?template=content_issue.yml&title=Issue+regarding+Actual+Placement+Fields" class="web-button" target="_blank">Raise an issue about this category</a>
 
 ### Quality Assurance
 
@@ -72,5 +80,5 @@
 |`Date of Data entry (placement cost)`	| *date* |1 |	date | |
 
 
-<a href="https://github.com/SocialCareData/placements-standard/issues/new?template=content_issue.yml&title=Issue+regarding+Placements+Spec+Finance+Information+category" class="web-button" target="_blank">Raise an issue about this category: Finance Information </a>
+<a href="https://github.com/SocialCareData/placements-standard/issues/new?template=content_issue.yml&title=Issue+regarding+Quality+Assurance+Fields" class="web-button" target="_blank">Raise an issue about this category</a>
 
