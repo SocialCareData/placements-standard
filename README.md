@@ -1,6 +1,6 @@
 # Placements Data Standard
 
-Status: Initial Draft
+Status: v2
 Effective Date: 2025-07-18
 
 ## Purpose  
