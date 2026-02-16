@@ -1,0 +1,315 @@
+{
+  "metadata": {
+    "title": "Placements Data Standard",
+    "version": "v2",
+    "status": "draft",
+    "effectiveDate": "2025-07-18",
+    "description": "Standardised data for placement referrals and agreements to support sufficiency analysis."
+  },
+  "entities": [
+    {
+      "name": "PlacementAvailability",
+      "description": "Determinants of placement availability.",
+      "fields": [
+        {
+          "name": "childId",
+          "type": "Integer",
+          "cardinality": "1..1",
+          "description": "Child ID number."
+        },
+        {
+          "name": "neededBy",
+          "type": "Categorical",
+          "cardinality": "0..1",
+          "description": "When placement is needed by.",
+          "options": ["Today", "in less than 5 days", "in more than 5 days"]
+        },
+        {
+          "name": "siblingCount",
+          "type": "Integer",
+          "cardinality": "0..1",
+          "description": "Number of siblings to place with."
+        },
+        {
+          "name": "preferredLocation",
+          "type": "String",
+          "cardinality": "0..1",
+          "description": "Preferred location for home search."
+        }
+      ]
+    },
+    {
+      "name": "PlacementRequirements",
+      "description": "Specific requirements for the placement.",
+      "fields": [
+        {
+          "name": "communicationNeeds",
+          "type": "Categorical",
+          "cardinality": "1..1",
+          "description": "Communication, language and learning needs.",
+          "options": ["Y", "N", "Not Specified"]
+        },
+        {
+          "name": "specificCommunicationRequirements",
+          "type": "Categorical",
+          "cardinality": "1..*",
+          "description": "Specific communication and language requirements.",
+          "options": ["ESOL", "BSL", "Makaton", "Other", "None"]
+        },
+        {
+          "name": "homeAdaptation",
+          "type": "Boolean",
+          "cardinality": "1..1",
+          "description": "Adaptation to the home."
+        },
+        {
+          "name": "culturalNeeds",
+          "type": "Categorical",
+          "cardinality": "1..1",
+          "description": "Cultural needs (e.g. place of worship).",
+          "options": ["Required", "Not required", "Not Known", "Other"]
+        },
+        {
+          "name": "livingCompanions",
+          "type": "Categorical",
+          "cardinality": "1..1",
+          "description": "Who can the child be cared for alongside?",
+          "options": ["Solo placement recommended", "With other children recommended", "Only with other older children", "Only with other younger children", "No preference"]
+        },
+        {
+          "name": "pets",
+          "type": "Categorical",
+          "cardinality": "1..1",
+          "description": "Can the child live with pets/animals?",
+          "options": ["Yes - must", "Yes - can", "No", "Not Known"]
+        },
+        {
+          "name": "additionalSupport",
+          "type": "Categorical",
+          "cardinality": "0..1",
+          "description": "Additional support required.",
+          "options": ["additional supervision", "therapeutic support", "a worker for respite", "taxis to school", "NA", "other (please specify)"]
+        },
+        {
+          "name": "deprivationOfLiberty",
+          "type": "Boolean",
+          "cardinality": "0..1",
+          "description": "Deprivation of Liberty Order."
+        }
+      ]
+    },
+    {
+      "name": "PlacementRecommendation",
+      "description": "Suitability of different placement types.",
+      "fields": [
+        {
+          "name": "fosterCareSuitability",
+          "type": "Categorical",
+          "cardinality": "1..1",
+          "description": "Foster care suitability.",
+          "options": ["Preferred", "Suitable but not preferred", "Unsuitable", "Not specified"]
+        },
+        {
+          "name": "residentialCareSuitability",
+          "type": "Categorical",
+          "cardinality": "1..1",
+          "description": "Residential care suitability.",
+          "options": ["Preferred", "Suitable but not preferred", "Unsuitable", "Not specified"]
+        },
+        {
+          "name": "supportedAccommodationSuitability",
+          "type": "Categorical",
+          "cardinality": "1..1",
+          "description": "Supported Accomodation suitability.",
+          "options": ["Preferred", "Suitable but not preferred", "Unsuitable", "Not specified"]
+        }
+      ]
+    },
+    {
+      "name": "Risks",
+      "description": "Risks associated with the child or to others.",
+      "fields": [
+        {
+          "name": "riskSelfHarm",
+          "type": "Categorical",
+          "cardinality": "1..1",
+          "description": "Risk to child: Self-harm.",
+          "options": ["No known risk", "Risk Present"]
+        },
+        {
+          "name": "riskSexualExploitation",
+          "type": "Categorical",
+          "cardinality": "1..1",
+          "description": "Risk to child: Sexual exploitation.",
+          "options": ["No known risk", "Risk Present"]
+        },
+        {
+          "name": "riskCriminalExploitation",
+          "type": "Categorical",
+          "cardinality": "1..1",
+          "description": "Risk to child: Criminal exploitation.",
+          "options": ["No known risk", "Risk Present"]
+        },
+        {
+          "name": "riskDrugAlcohol",
+          "type": "Categorical",
+          "cardinality": "1..1",
+          "description": "Risk to child: Drug and alcohol use.",
+          "options": ["No known risk", "Risk Present"]
+        },
+        {
+          "name": "riskEatingDisorder",
+          "type": "Categorical",
+          "cardinality": "1..1",
+          "description": "Risk to child: Eating disorder.",
+          "options": ["No known risk", "Risk Present"]
+        },
+        {
+          "name": "riskMissing",
+          "type": "Categorical",
+          "cardinality": "1..1",
+          "description": "Risk to child: Going missing.",
+          "options": ["No known risk", "Risk Present"]
+        },
+        {
+          "name": "riskOther",
+          "type": "String",
+          "cardinality": "0..1",
+          "description": "Risk to child: Other (please specify)."
+        },
+        {
+          "name": "riskToOthersPhysical",
+          "type": "Categorical",
+          "cardinality": "1..1",
+          "description": "Risk to others or property: Physical harm.",
+          "options": ["No known risk", "Risk Present"]
+        },
+        {
+          "name": "riskToOthersSexual",
+          "type": "Categorical",
+          "cardinality": "1..1",
+          "description": "Risk to others or property: Sexual harm.",
+          "options": ["No known risk", "Risk Present"]
+        },
+        {
+          "name": "riskToOthersFire",
+          "type": "Categorical",
+          "cardinality": "1..1",
+          "description": "Risk to others or property: Fire-setting.",
+          "options": ["No known risk", "Risk Present"]
+        },
+        {
+          "name": "riskToOthersAnimals",
+          "type": "Categorical",
+          "cardinality": "1..1",
+          "description": "Risk to others or property: Harm to animals.",
+          "options": ["No known risk", "Risk Present"]
+        },
+        {
+          "name": "riskToOthersCriminal",
+          "type": "Categorical",
+          "cardinality": "1..1",
+          "description": "Risk to others or property: Criminal exploitation.",
+          "options": ["No known risk", "Risk Present"]
+        },
+        {
+          "name": "riskToOthersOther",
+          "type": "String",
+          "cardinality": "0..1",
+          "description": "Risk to others or property: Other (please specify)."
+        }
+      ]
+    },
+    {
+      "name": "ActualPlacement",
+      "description": "Details of the agreed placement.",
+      "fields": [
+        {
+          "name": "totalWeeklyCost",
+          "type": "Integer",
+          "cardinality": "1..1",
+          "description": "Total Weekly Cost (actual weekly fee paid)."
+        },
+        {
+          "name": "placementLocation",
+          "type": "String",
+          "cardinality": "1..1",
+          "description": "Placement Location."
+        },
+        {
+          "name": "preferabilityLocation",
+          "type": "Boolean",
+          "cardinality": "1..1",
+          "description": "Preferabilty of placement location."
+        },
+        {
+          "name": "educationContinuity",
+          "type": "Boolean",
+          "cardinality": "1..1",
+          "description": "Education Continuity."
+        },
+        {
+          "name": "providerURN",
+          "type": "String",
+          "cardinality": "1..1",
+          "description": "Provider URN (linked to Ofsted)."
+        },
+        {
+          "name": "siblingsPlacedTogether",
+          "type": "Integer",
+          "cardinality": "1..1",
+          "description": "How many siblings were placed together?"
+        },
+        {
+          "name": "placementType",
+          "type": "Categorical",
+          "cardinality": "1..1",
+          "description": "Placement Type.",
+          "options": ["Residential", "Foster", "Supported Accommodation"]
+        }
+      ]
+    },
+    {
+      "name": "QualityAssurance",
+      "description": "Metadata about the data entry.",
+      "fields": [
+        {
+          "name": "referralOfficerName",
+          "type": "String",
+          "cardinality": "0..1",
+          "description": "Name of officer (referral)."
+        },
+        {
+          "name": "referralDate",
+          "type": "Date",
+          "cardinality": "1..1",
+          "description": "Date of Data entry (referral)."
+        },
+        {
+          "name": "placementOfficerName",
+          "type": "String",
+          "cardinality": "1..1",
+          "description": "Name of officer (placement)."
+        },
+        {
+          "name": "placementDate",
+          "type": "Date",
+          "cardinality": "1..1",
+          "description": "Date of Data entry (placement)."
+        },
+        {
+          "name": "costOfficerName",
+          "type": "String",
+          "cardinality": "0..1",
+          "description": "Name of officer (placement cost)."
+        },
+        {
+          "name": "costDate",
+          "type": "Date",
+          "cardinality": "1..1",
+          "description": "Date of Data entry (placement cost)."
+        }
+      ]
+    }
+  ]
+}
